@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+/* Premium micro-scrollbar styling for light & dark modes */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 6px;
+  border: 2px solid #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* --- Premium 3D & Glassmorphic Utilities with Light-Sweep Shimmers --- */
+
+@keyframes light-sweep {
+  0% {
+    transform: translateX(-120%) skewX(-30deg);
+  }
+  75% {
+    transform: translateX(220%) skewX(-30deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-30deg);
+  }
+}
+
+/* Base button wrapper that supports the shimmer swipe effect */
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer !important;
+  user-select: none;
+}
+
+.shimmer-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-30deg);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.shimmer-btn:hover::after {
+  opacity: 1;
+  animation: light-sweep 1.8s infinite ease-in-out;
+}
+
+/* 3D Blue Button */
+.btn-3d-primary {
+  @apply bg-blue-600 border-b-4 border-blue-800 text-white shadow-lg active:translate-y-[3px] active:border-b-0 hover:bg-blue-500 transition-all duration-150 relative overflow-hidden;
+}
+
+/* 3D Green Button */
+.btn-3d-emerald {
+  @apply bg-emerald-600 border-b-4 border-emerald-800 text-white shadow-lg active:translate-y-[3px] active:border-b-0 hover:bg-emerald-500 transition-all duration-150 relative overflow-hidden;
+}
+
+/* 3D Dark/Light Glassmorphic Button */
+.btn-3d-glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.15s ease-in-out;
+}
+
+.dark .btn-3d-glass {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.btn-3d-glass:active {
+  transform: translateY(3px);
+  border-bottom-width: 0px;
+}
+
+/* Make sure all interactive nodes are cursor-pointer and show tap feedback */
+a, button, select, input[type="submit"] {
+  cursor: pointer !important;
+}
+
+/* Micro interaction feedback for any standard clickables */
+.interactive-click {
+  @apply active:scale-95 duration-100 transition-transform;
+}
+

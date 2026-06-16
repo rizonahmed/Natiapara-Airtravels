@@ -1,0 +1,6 @@
+{
+  "name": "Natiapara Air Travels",
+  "description": "Premium, modern aviation-inspired, SEO-optimized, bilingual (Bangla + English) landing page for Natiapara Air Travels, featuring flight ticketers, helicopter rentals, visa guidelines, and premium travel assistance in Tangail, Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
