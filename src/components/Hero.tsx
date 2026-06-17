@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
       icon: <Plane className="w-5 h-5 text-sky-500 dark:text-sky-400 rotate-45" />,
       title: t('services.intl.title'),
       desc: t('services.intl.desc'),
-      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80',
+      image: 'https://www.emperortraveline.com/wp-content/uploads/2021/06/Planning-a-trip.jpeg',
       tag: t('hero.feat.intl'),
       badgeColor: 'bg-blue-100 dark:bg-blue-950/50 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-800'
     },

@@ -52,7 +52,7 @@ export const About: React.FC = () => {
             
             <div className="relative overflow-hidden rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-800/80">
               <img
-                src={aboutImg}
+                src="https://a.storyblok.com/f/203826/5890x3919/ab047cd564/istock-1413299539.jpg/m/3840x0/filters:quality(60)"
                 alt="Travel Consultation Desk"
                 referrerPolicy="no-referrer"
                 className="w-full h-auto aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700"
@@ -143,7 +143,7 @@ export const About: React.FC = () => {
                     {language === 'en' ? 'Official Plaza Office' : 'অফিশিয়াল প্লাজা অফিস'}
                   </h4>
                   <p className="text-xs text-slate-500 dark:text-slate-400">
-                    {language === 'en' ? 'M A Plaza, Delduar' : 'এম এ প্লাজা, দেলদুয়ার'}
+                    {language === 'en' ? 'M A Plaza, Natiapara' : 'এম এ প্লাজা, নাটিয়াপাড়া'}
                   </p>
                 </div>
               </div>
