@@ -106,7 +106,7 @@ export const Hero: React.FC = () => {
           className={`w-full h-full object-cover object-center transition-all duration-700 ${
             theme === 'dark' 
               ? 'opacity-35' 
-              : 'opacity-[0.48] brightness-[0.98] contrast-[1.05] grayscale-[20%]'
+              : 'opacity-[0.58] brightness-[0.98] contrast-[1.05] grayscale-[20%]'
           }`}
         />
         {/* Dynamic theme-relative gradients for readable typography */}

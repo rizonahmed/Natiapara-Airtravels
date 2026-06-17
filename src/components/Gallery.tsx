@@ -32,7 +32,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-plane-2',
       category: 'planes',
-      src: 'https://images.unsplash.com/photo-1473862170180-84427c485ade?auto=format&fit=crop&w=600&q=80',
+      src: 'https://thumbs.dreamstime.com/b/passenger-jet-plane-landing-air-port-runways-against-beautifu-beautiful-dusky-sky-use-travel-business-transport-cargo-40982149.jpg',
       titleEn: 'Modern Passenger Jetliner',
       titleBn: 'আধুনিক কমার্শিয়াল এয়ারলাইনার',
       altEn: 'White passenger jet airplane flying in high altitude',
@@ -41,7 +41,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-plane-3',
       category: 'planes',
-      src: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80',
+      src: 'https://images.stockcake.com/public/a/e/6/ae6bd29c-88b7-4ca5-bafa-192a02b984a5_large/soaring-through-sunset-stockcake.jpg',
       titleEn: 'Sunset Golden Ascent',
       titleBn: 'সূর্যাস্তের নয়নাভিরাম উড্ডয়ন',
       altEn: 'Large jet passenger plane taking off beautifully during golden sunset',
@@ -50,7 +50,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-plane-4',
       category: 'planes',
-      src: 'https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=600&q=80',
+      src: 'https://media.istockphoto.com/id/902818356/photo/sunset-sky-on-airplane-window-over-copenhagen-denmark-in-friday.jpg?s=612x612&w=0&k=20&c=lmUoxCl8_lyfNuRMoPwSpg6CE36xjd2nMHCiaKpuL0c=',
       titleEn: 'Airliner Wing Over Clouds',
       titleBn: 'মেঘের উপরে বিমান উইং ভিউ',
       altEn: 'Passenger jet wing and sky with clouds beautiful scenery',
@@ -68,7 +68,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-plane-6',
       category: 'planes',
-      src: 'https://images.unsplash.com/photo-1519074002996-a69e7ac46a42?auto=format&fit=crop&w=600&q=80',
+      src: 'https://assets.paramountbusinessjets.com/media/blog/uploads/blog_speed_private_jet_flying.jpg',
       titleEn: 'Cruising Jet Flight',
       titleBn: 'উন্নত কমার্শিয়াল ডাবল ডেকার বিমান',
       altEn: 'Clean high speed commercial airliner cruising above beautiful clouds',
@@ -86,7 +86,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-plane-8',
       category: 'planes',
-      src: 'https://images.unsplash.com/photo-1524486361537-8ad15938e1a3?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.theglobeandmail.com/resizer/v2/7WO7FIQZMBCMLMYOAOZJ5QAHNU.JPG?auth=ecb08d774903c09447ed2ae024210418423bcda6d89d9021d1de2ea093808ed4&width=600&quality=80',
       titleEn: 'Scenic Aircraft Flight Route',
       titleBn: 'স্নো মাউন্টেন বিমান রুট',
       altEn: 'White commercial passenger airline cruising elegantly over beautiful white snow peak chain',
@@ -95,7 +95,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-plane-9',
       category: 'planes',
-      src: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80',
+      src: 'https://static0.simpleflyingimages.com/wordpress/wp-content/uploads/2023/10/shutterstock_2187992265_169.jpg',
       titleEn: 'Ascending High Altitude Jet',
       titleBn: 'উড্ডয়নরত আধুনিক এয়ারবাস',
       altEn: 'Modern passenger jet cruising elegantly towards horizon',
@@ -106,7 +106,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-airport-1',
       category: 'airport',
-      src: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.futuretravelexperience.com/wp-content/uploads/2025/08/CPK-enters-next-phase.jpg',
       titleEn: 'Modern Passenger Terminal',
       titleBn: 'আধুনিক এয়ারপোর্ট টার্মিনাল ভবন',
       altEn: 'Beautiful futuristic architecture of airport terminal with natural lighting',
@@ -115,7 +115,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-airport-2',
       category: 'airport',
-      src: 'https://images.unsplash.com/photo-1505664194779-8bebcb95ce02?auto=format&fit=crop&w=600&q=80',
+      src: 'https://preview.redd.it/ive-never-seen-a-similar-ramp-to-disembark-how-common-v0-yjsymozi1dnf1.jpg?width=640&crop=smart&auto=webp&s=4b3c2c73189e451a8c79c7a301b4ed05abe62cea',
       titleEn: 'Airport Gates and Boarding Ramps',
       titleBn: 'এয়ারপোর্ট বোর্ডিং গেট ও টার্মিনাল',
       altEn: 'Passenger airlines parked ready next to terminal boarding gates',
@@ -124,7 +124,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-airport-3',
       category: 'airport',
-      src: 'https://images.unsplash.com/photo-1490430657723-4d607c1503fc?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.globalair.com.bd/storage/photos/2/Dhaka%20Airport%20Immigration%20Process%20Blog%20featured%20image.webp',
       titleEn: 'Ticketing and Immigration Desks',
       titleBn: 'টিকিট এবং চেক-ইন কাউন্টার',
       altEn: 'Spacious airport lobby with clear terminal maps, flags and travel boards',
@@ -133,7 +133,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-airport-4',
       category: 'airport',
-      src: 'https://images.unsplash.com/photo-1529074963764-98f45c47344b?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.marhabaservices.com/dw/image/v2/BDFQ_PRD/on/demandware.static/-/Sites-dnata-master-catalog/default/dwe5361dbe/images/hi-res/PPG%20CGK%20Lounge/CGK-lounge-interiors-3.jpeg?sw=1075&sh=825&sm=fit&q=80',
       titleEn: 'International Airport Lounge',
       titleBn: 'আন্তর্জাতিক এয়ারপোর্ট ওয়েটিং লাউঞ্জ',
       altEn: 'Tourists sitting inside terminal lounge looking out the glass window at flights',
@@ -142,7 +142,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-airport-5',
       category: 'airport',
-      src: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=600&q=80',
+      src: 'https://static0.simpleflyingimages.com/wordpress/wp-content/uploads/2024/01/clipboard-46.png?w=1600&h=900&fit=crop',
       titleEn: 'Flight Departure Board Display',
       titleBn: 'ডিপার্চার শিডিউল এবং ট্র্যাকিং',
       altEn: 'Dynamic digital departure times monitor screen on terminal airport',
@@ -153,7 +153,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-heli-1',
       category: 'heli',
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=600&q=80',
+      src: 'https://images.pexels.com/photos/34911798/pexels-photo-34911798/free-photo-of-helicopter-flight-over-nepal-s-snowy-himalayas.jpeg',
       titleEn: 'Scenic Mountain Copter',
       titleBn: 'পাহাড় চিড়ে উড্ডয়নরত হেলিকপ্টার',
       altEn: 'Modern response and charter helicopter cruising beautifully over scenic mountain peaks',
@@ -162,7 +162,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-heli-2',
       category: 'heli',
-      src: 'https://images.unsplash.com/photo-1583091922657-3f3032fcfc54?auto=format&fit=crop&w=600&q=80',
+      src: 'https://blog.sothebysrealty.co.uk/hs-fs/hubfs/billionaire%20luxury%20private%20helicopter.jpg?width=1000&height=641&name=billionaire%20luxury%20private%20helicopter.jpg',
       titleEn: 'Luxurious Executive Helicopter',
       titleBn: 'ভিআইপি ও লাক্সারি প্রাইভেট কপ্টার',
       altEn: 'Sleek dark private corporate transport helicopter parked on airport tarmac',
@@ -171,7 +171,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-heli-3',
       category: 'heli',
-      src: 'https://images.unsplash.com/photo-1541336032412-2048a678540d?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.bangladeshhelicopterservice.com/helicopter/air-ambulance/air-ambulance-book8.jpeg',
       titleEn: 'Air Ambulance Rescue Charter',
       titleBn: 'জরুরী এয়ার অ্যাম্বুলেন্স কপ্টার',
       altEn: 'Active medical rescue responder helicopter flying gracefully in clear blue skies',
@@ -180,7 +180,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-heli-4',
       category: 'heli',
-      src: 'https://images.unsplash.com/photo-1524046995470-3de5de3702a4?auto=format&fit=crop&w=600&q=80',
+      src: 'https://cdn-imgix.headout.com/media/images/4fef5fceb3d82bc2ba21db2d658354a7-17570-dubai-12-minutes-atlantis-helicopter-tour-07.jpg?auto=compress%2Cformat&w=900&h=562.5&q=90&ar=16%3A10&crop=faces%2Ccenter&fit=crop',
       titleEn: 'Private Helicopter Heliport Lounge',
       titleBn: 'হেলিপ্যাড প্রাঙ্গণে প্রাইভেট কপ্টার',
       altEn: 'Executive civilian private helicopter ready to depart on the lawn helipad',
@@ -191,7 +191,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-visa-1',
       category: 'visas',
-      src: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=600&q=80',
+      src: 'https://png.pngtree.com/thumb_back/fw800/background/20251105/pngtree-close-up-of-a-hand-stamping-an-entry-visa-into-passport-image_20250015.webp',
       titleEn: 'Passports with Stamped Visas',
       titleBn: 'পাসপোর্ট ভিসা স্ট্যাম্প সাকসেস',
       altEn: 'Valid travel international passports with active official visa stamps',
@@ -200,7 +200,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-visa-2',
       category: 'visas',
-      src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80',
+      src: 'https://media.istockphoto.com/id/2222985151/photo/approved-stamp-visa-and-passport-with-us-flag-document-to-immigration-at-airport-in-country.jpg?s=612x612&w=0&k=20&c=pTYde6Y9oVCbWb5HQq0vkmwtwonxP9_5rikmsnZPGgM=',
       titleEn: 'Approved Travel Documentation',
       titleBn: 'ভ্রমণ ক্যাটাগরি ডকুমেন্ট অনুমোদন',
       altEn: 'Immigration official documents and global travel passports on study desk',
@@ -209,7 +209,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-visa-3',
       category: 'visas',
-      src: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.jmvisaservices.com/images/work-visa.jpg',
       titleEn: 'Work & Employment Visas',
       titleBn: 'ওয়ার্ক ও ট্যুরিস্ট ভিসা সাকসেস',
       altEn: 'Passports with official sticker visa placements and authorization seals',
@@ -218,7 +218,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-visa-4',
       category: 'visas',
-      src: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.accurate.com/au/wp-content/uploads/sites/3/2022/12/VerNow-1-Copy-1024x1024.png.png',
       titleEn: 'Visa Guidelines Verification',
       titleBn: 'নির্ভুল ফাইল প্রসেস যাচাইকরণ',
       altEn: 'Legal visa notary stamps and official verification documentation',
@@ -229,7 +229,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-dest-1',
       category: 'dest',
-      src: 'https://images.unsplash.com/photo-1565552115943-07b2747599cb?auto=format&fit=crop&w=600&q=80',
+      src: 'https://media.istockphoto.com/id/2210518516/photo/realistic-islamic-hajj-pilgrimage-illustration.jpg?s=612x612&w=0&k=20&c=YZgfwgTjmyru5unygHnDJ8B8f-Tm02w-DxAZj476114=',
       titleEn: 'Holy Kaaba Pilgrimage Mecca',
       titleBn: 'পবিত্র কাবা শরিফ ওমরাহ ও হজ',
       altEn: 'Magnificent close up of Holy Kaaba with gold calligraphy Kiswah in Mecca',
@@ -238,7 +238,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-dest-2',
       category: 'dest',
-      src: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.islamiclandmarks.com/wp-content/uploads/2023/05/prophet_saw_mosque_second_largest_mosque.jpg',
       titleEn: 'Prophets Mosque in Madina',
       titleBn: 'পবিত্র মদীনা আল-মনোয়ারা জিয়ারত',
       altEn: 'Serene and beautiful view of the Prophets Masjid in Medina Al-Munawwarah',
@@ -247,7 +247,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-dest-3',
       category: 'dest',
-      src: 'https://images.unsplash.com/photo-1591604121614-fb171a90b99d?auto=format&fit=crop&w=600&q=80',
+      src: 'https://media.istockphoto.com/id/2189017784/photo/night-aerial-of-meccas-grand-mosque-and-abraj-al-bait-clock-tower.jpg?s=612x612&w=0&k=20&c=yPiLcwYdkfaWgXEa8aSC2UDj6vo2jloEQl58ahIHQns=',
       titleEn: 'Al-Haram Air View',
       titleBn: 'কাবা তাওয়াফ এয়ার ভিউ',
       altEn: 'Beautiful aerial view of pilgrims performing prayers at Masjid Al-Haram',
@@ -256,7 +256,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-dest-4',
       category: 'dest',
-      src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80',
+      src: 'https://paradiseislandmaldives.net/wp-content/uploads/2022/12/DJI_0913-copy-scaled.jpg',
       titleEn: 'Maldives Paradise Beach Resorts',
       titleBn: 'মালদ্বীপ ও লাক্সারি হলিডে স্পট',
       altEn: 'Beautiful blue beach ocean overwater villa resort tourist paradise',
@@ -265,7 +265,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-dest-5',
       category: 'dest',
-      src: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=80',
+      src: 'https://www.autoeurope.co.uk/UK/assets/image/Colosseum-rome.jpg',
       titleEn: 'Ancient Rome Colosseum Europe',
       titleBn: 'শেনজেন ইউরোপ ঐতিহাসিক ভ্রমণ স্পট',
       altEn: 'Italy Colosseum historical architectural ruins in Rome',
@@ -274,7 +274,7 @@ export const Gallery: React.FC = () => {
     {
       id: 'g-dest-6',
       category: 'dest',
-      src: 'https://images.unsplash.com/photo-1506973035872-a4ac16b8e8d9?auto=format&fit=crop&w=600&q=80',
+      src: 'https://assets.oakshotels.com/image/upload/q_auto,f_auto/media/minor/oaks/images/blog/2023/must-see-sydney-landmarks/_h1_-exploring-the-iconic-landmarks-of-sydney---a-must-visit-guide.png?h=67%25&w=100%25',
       titleEn: 'Sydney Iconic Travel Spot',
       titleBn: 'সিডনি অপেরা হাউস অস্ট্রেলিয়া ট্রাভেল',
       altEn: 'Sydney Opera house harbor front travel and touring',

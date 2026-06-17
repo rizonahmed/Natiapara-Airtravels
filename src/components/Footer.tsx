@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion } from 'motion/react';
 import { PlaneTakeoff, Facebook, Youtube, Linkedin, MessageSquare, Mail, Phone, MapPin } from 'lucide-react';
+import logo from '../assets/images/logo.jpeg'
 
 export const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -36,16 +37,8 @@ export const Footer: React.FC = () => {
           {/* Column A: Company bio */}
           <div className="lg:col-span-4 space-y-6">
             <a href="#home" className="flex items-center gap-2.5 group">
-              <div className="p-2 bg-gradient-to-tr from-blue-600 to-sky-400 rounded-xl text-white shadow-md shadow-blue-500/20">
-                <PlaneTakeoff className="w-5 h-5 rotate-[-15deg] group-hover:scale-105 transition-transform" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold text-base tracking-tight text-white leading-tight">
-                  NATIAPARA
-                </span>
-                <span className="text-[10px] font-semibold tracking-wider text-sky-450 text-sky-400 uppercase leading-none">
-                  Air Travels
-                </span>
+              <div className="p-2 ">
+               <img src={logo} className='h-18 rounded-2xl' alt="" />
               </div>
             </a>
             

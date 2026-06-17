@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { PlaneTakeoff } from 'lucide-react';
+import logo from '../assets/images/logo.jpeg';
 
-export const Loader: React.FC = () => {
+const Loader: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Dismiss loading scene after 1200ms
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1200);
@@ -22,47 +21,54 @@ export const Loader: React.FC = () => {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
-          className="fixed inset-0 z-150 bg-slate-950 flex flex-col items-center justify-center text-white"
+          className="fixed inset-0 z-[150] bg-slate-950 flex items-center justify-center"
         >
-          <div className="relative flex flex-col items-center space-y-6">
+          <div className="flex flex-col items-center gap-6">
             
-            {/* Flying airplane taking off loop */}
+            {/* Animated Logo Container */}
             <motion.div
               animate={{
                 y: [0, -10, 0],
-                rotate: [-5, 10, -5],
               }}
               transition={{
                 duration: 2.2,
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
-              className="p-5 bg-blue-600 rounded-3xl text-white shadow-xl shadow-blue-500/10 border border-blue-500/20"
+              className="flex items-center justify-center"
             >
-              <PlaneTakeoff className="w-10 h-10" />
+              <img
+                src={logo}
+                alt="Natiapara Air Travels"
+                className="w-40 h-40 md:w-52 md:h-52 object-contain select-none"
+                draggable={false}
+              />
             </motion.div>
 
-            {/* Pulsing branding title */}
-            <div className="text-center">
-              <motion.h2
-                animate={{ opacity: [0.6, 1, 0.6] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-                className="text-2xl font-black tracking-widest text-white uppercase font-sans"
-              >
-                NATIAPARA
-              </motion.h2>
-              <p className="text-[10px] font-bold text-sky-450 tracking-wider text-sky-450 text-sky-400 uppercase">
-                Aviation & Foreign Careers
-              </p>
-            </div>
+            {/* Subtitle */}
+            <motion.p
+              animate={{ opacity: [0.5, 1, 0.5] }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+              className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-sky-400 text-center"
+            >
+              Aviation & Foreign Careers
+            </motion.p>
 
-            {/* Dotted travel runway indicator */}
-            <div className="w-40 h-1 bg-slate-900 rounded-full relative overflow-hidden">
+            {/* Loading Bar */}
+            <div className="w-48 h-1.5 bg-slate-800 rounded-full overflow-hidden relative">
               <motion.div
-                initial={{ left: '-100%' }}
-                animate={{ left: '100%' }}
-                transition={{ duration: 1.2, repeat: Infinity, ease: 'linear' }}
-                className="absolute top-0 bottom-0 w-1/3 bg-gradient-to-r from-blue-600 to-sky-450 to-sky-400 rounded-full"
+                initial={{ x: '-100%' }}
+                animate={{ x: '300%' }}
+                transition={{
+                  duration: 1.2,
+                  repeat: Infinity,
+                  ease: 'linear',
+                }}
+                className="absolute top-0 left-0 h-full w-1/3 rounded-full bg-gradient-to-r from-blue-500 to-sky-400"
               />
             </div>
 
@@ -72,4 +78,5 @@ export const Loader: React.FC = () => {
     </AnimatePresence>
   );
 };
+
 export default Loader;

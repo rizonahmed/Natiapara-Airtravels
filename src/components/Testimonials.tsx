@@ -95,7 +95,7 @@ export const Testimonials: React.FC = () => {
               className="p-8 sm:p-12 bg-white dark:bg-slate-900 rounded-3xl shadow-lg border border-slate-200/50 dark:border-slate-800/80 relative"
             >
               {/* Giant decorative quote mark */}
-              <Quote className="absolute top-6 left-6 w-12 h-12 text-slate-100 dark:text-slate-800 pointer-events-none" />
+              <Quote className="absolute top-6 right-6 w-12 h-12 text-slate-100 dark:text-slate-800 pointer-events-none" />
 
               {/* Star rating stack */}
               <div id="stars-row" className="flex items-center gap-1 mb-6">

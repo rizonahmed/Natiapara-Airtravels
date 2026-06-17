@@ -6,6 +6,7 @@ import ThemeToggle from './ThemeToggle';
 import { motion, AnimatePresence } from 'motion/react';
 import { PlaneTakeoff, Menu, X, Phone } from 'lucide-react';
 import { WhatsAppIcon } from './Icons';
+import logo from '../assets/images/logo.jpeg'
 
 export const Navbar: React.FC = () => {
   const { t } = useLanguage();
@@ -104,16 +105,8 @@ export const Navbar: React.FC = () => {
             href="#home"
             className="flex items-center gap-2 group cursor-pointer max-w-[55%]"
           >
-            <div className="p-1.5 sm:p-2 bg-gradient-to-tr from-blue-600 to-sky-450 rounded-xl text-white shadow-md shadow-blue-500/20 group-hover:scale-110 transition-transform flex-shrink-0">
-              <PlaneTakeoff className="w-5 h-5 sm:w-5.5 sm:h-5.5 rotate-[-15deg]" />
-            </div>
-            <div className="flex flex-col min-w-0">
-              <span id="nav-brand-title" className="font-extrabold text-base sm:text-lg md:text-xl tracking-tight text-slate-900 dark:text-white leading-tight truncate">
-                NATIAPARA
-              </span>
-              <span className="text-[9px] sm:text-[10px] md:text-xs font-bold tracking-widest text-blue-600 dark:text-sky-400 uppercase leading-none truncate">
-                Air Travels
-              </span>
+            <div className="p-1.5 sm:p-2    text-white   group-hover:scale-110 transition-transform  ">
+              <img src={logo} alt=""  className='h-16  rounded-2xl'/>
             </div>
           </a>
 
