@@ -32,8 +32,8 @@ const translations = {
 
     // Hero
     'hero.title': 'Natiapara Air Travels',
-    'hero.sub': 'Your Trusted Travel, Aviation & Visa Processing Partner',
-    'hero.desc': 'Professional air ticketing, premium helicopter reservations, and fast, secure visa support from Bangladesh to the world.',
+    'hero.sub': 'Your Trusted Air Ticket, Manpower & Helicopter Reservation Partner',
+    'hero.desc': 'Natiapara Air Travels is a trusted travel agency in Bangladesh, providing domestic and international air ticket booking, manpower processing, helicopter reservations, and visa assistance. We are committed to delivering fast, secure, and professional travel solutions at competitive prices.',
     'hero.badge': '✈ Flying High, Serving Trusted',
     'hero.feat.intl': 'International Booking',
     'hero.feat.heli': 'Helicopter Rental',
@@ -200,8 +200,8 @@ const translations = {
 
     // Hero
     'hero.title': 'নাটিয়াপাড়া এয়ার ট্রাভেলস',
-    'hero.sub': 'আপনার বিশ্বস্ত ভ্রমণ, বিমান এবং ওমরাহ ও ভিসা প্রসেসিং পার্টনার',
-    'hero.desc': 'বাংলাদেশ থেকে বিশ্বব্যাপী বিশ্বস্ত এয়ার টিকিট বুকিং, বিলাসবহুল হেলিকপ্টার ভাড়া এবং নির্ভরযোগ্য ভিসা প্রসেসিং সেবা পাবেন আমাদের এখানে।',
+    'hero.sub': 'আপনার বিশ্বস্ত বিমান টিকিট, ম্যানপাওয়ার ও হেলিকপ্টার রিজার্ভেশন সেবার নির্ভরযোগ্য  পার্টনার',
+    'hero.desc': 'নাটিয়াপাড়া এয়ার ট্রাভেলস বাংলাদেশের একটি নির্ভরযোগ্য ও বিশ্বস্ত ট্রাভেল এজেন্সি। আমরা দেশীয় ও আন্তর্জাতিক বিমান টিকিট বুকিং, ম্যানপাওয়ার প্রসেসিং, হেলিকপ্টার রিজার্ভেশন, ভিসা সহায়তা এবং বিভিন্ন ভ্রমণসেবা প্রদান করে থাকি। আমাদের লক্ষ্য হলো গ্রাহকদের জন্য দ্রুত, নিরাপদ এবং পেশাদার সেবা নিশ্চিত করা, যাতে তারা সাশ্রয়ী মূল্যে সর্বোত্তম ভ্রমণ অভিজ্ঞতা লাভ করতে পারেন।',
     'hero.badge': '✈ আস্থার সাথে উড়ুন বিশ্বজুড়ে',
     'hero.feat.intl': 'আন্তর্জাতিক বিমান টিকিট',
     'hero.feat.heli': 'হেলিকপ্টার রিজার্ভেশন',

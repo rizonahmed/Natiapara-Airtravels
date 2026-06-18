@@ -1,160 +1,166 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion } from 'motion/react';
-import { Plane, Ticket, PlaneTakeoff, Globe, FileText, Briefcase, Users, Sparkles } from 'lucide-react';
+import {
+  Plane,
+  Ticket,
+  Globe,
+  FileText,
+  Briefcase,
+  Users,
+  Sparkles,
+} from 'lucide-react';
 import { HelicopterIcon } from './Icons';
 
 export const Services: React.FC = () => {
   const { t } = useLanguage();
 
+  const [expanded, setExpanded] = useState<string[]>([]);
+
+  const toggle = (id: string) => {
+    setExpanded((prev) =>
+      prev.includes(id)
+        ? prev.filter((x) => x !== id)
+        : [...prev, id]
+    );
+  };
+
   const servicesData = [
     {
       id: 'intl',
-      icon: <Plane className="w-7 h-7 text-blue-600 dark:text-sky-400 rotate-45" />,
+      image: 'https://static.vecteezy.com/system/resources/thumbnails/074/179/171/small/airplane-soaring-above-a-stunning-cloudscape-during-a-bright-daylight-flight-photo.jpg',
+      icon: <Plane className="w-7 h-7 text-blue-600" />,
       title: t('services.intl.title'),
       desc: t('services.intl.desc'),
     },
     {
       id: 'dom',
+      image: 'https://www.popsci.com/wp-content/uploads/2018/12/20/Y7WZ4YDMSLAXLUV33VNUY66OBM.jpg?strip=all&quality=85',
       icon: <Ticket className="w-7 h-7 text-amber-500" />,
       title: t('services.dom.title'),
       desc: t('services.dom.desc'),
     },
     {
       id: 'heli',
+      image: 'https://www.keihanhotels-resorts.co.jp/the-thousand-kyoto/en/okutrip/asset/heri1200.jpg',
       icon: <HelicopterIcon className="w-7 h-7 text-emerald-500" />,
       title: t('services.heli.title'),
       desc: t('services.heli.desc'),
     },
     {
       id: 'manpower',
-      icon: <Globe className="w-7 h-7 text-purple-500 animate-spin-slow" />,
+      image: 'https://mailmktg.makemytrip.com/mybusiness/images/CTM-2.jpg',
+      icon: <Globe className="w-7 h-7 text-purple-500" />,
       title: t('services.manpower.title'),
       desc: t('services.manpower.desc'),
     },
     {
       id: 'visa',
-      icon: <FileText className="w-7 h-7 text-blue-550 text-sky-400" />,
+      image: 'https://sophelp.com/wp-content/uploads/2022/11/SOP-for-Canada-student-visa-and-University-Application.webp',
+      icon: <FileText className="w-7 h-7 text-sky-500" />,
       title: t('services.visa.title'),
       desc: t('services.visa.desc'),
     },
     {
       id: 'corporate',
-      icon: <Briefcase className="w-7 h-7 text-slate-700 dark:text-slate-350" />,
+      image: 'https://www.skiltravel.com/public/uploads/blog/2de0d037c64f260ba6fe29473873e236.webp',
+      icon: <Briefcase className="w-7 h-7 text-slate-700" />,
       title: t('services.corp.title'),
       desc: t('services.corp.desc'),
     },
     {
       id: 'group',
-      icon: <Users className="w-7 h-7 text-teal-650 text-teal-550" />,
+      image: 'https://wptravel.io/wp-content/uploads/2024/05/travel-management-company-in-travel-industry-1024x576.jpeg',
+      icon: <Users className="w-7 h-7 text-teal-500" />,
       title: t('services.group.title'),
       desc: t('services.group.desc'),
     },
     {
       id: 'umrah',
+      image: 'https://img.magnific.com/premium-photo/breathtaking-view-kaaba-makkah-sunset_573056-41845.jpg?semt=ais_hybrid&w=740&q=80',
       icon: <Sparkles className="w-7 h-7 text-amber-500" />,
       title: t('services.umrah.title'),
       desc: t('services.umrah.desc'),
     },
   ];
 
-  const handleLearnMore = (serviceTitle: string) => {
-    // Select dropdown in Contact Form
-    const selectEl = document.getElementById('contact-service-select') as HTMLSelectElement;
-    if (selectEl) {
-      selectEl.value = serviceTitle;
-      // Trigger native change event so any local React state is synchronized
-      const event = new Event('change', { bubbles: true });
-      selectEl.dispatchEvent(event);
-    }
-
-    // Scroll to contact
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section
-      id="services"
-      className="py-24 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Services Header */}
-        <div id="services-header" className="max-w-3xl mx-auto text-center mb-16">
-          <motion.span
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-xs sm:text-sm font-bold tracking-widest text-blue-600 dark:text-sky-400 uppercase bg-blue-50 dark:bg-blue-950/40 px-3.5 py-1.5 rounded-full"
-          >
-            {t('services.badge')}
-          </motion.span>
-          <motion.h2
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white mt-4"
-          >
+    <section id="services" className="py-24 bg-white dark:bg-slate-900">
+      <div className="max-w-7xl mx-auto px-4">
+
+        {/* HEADER */}
+        <div className="text-center mb-14">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
             {t('services.title')}
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-slate-500 dark:text-slate-400 text-sm sm:text-base max-w-xl mx-auto mt-4"
-          >
+          </h2>
+          <p className="text-slate-500 mt-3">
             {t('services.subtitle')}
-          </motion.p>
+          </p>
         </div>
 
-        {/* Services Card Grid */}
+        {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
           {servicesData.map((service, idx) => (
             <motion.div
               key={service.id}
-              id={`service-card-${service.id}`}
-              initial={{ opacity: 0, y: 25 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="group p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800/60 shadow-xs hover:shadow-xl hover:bg-white dark:hover:bg-slate-800 hover:border-blue-500/20 dark:hover:border-sky-400/20 transition-all duration-300 flex flex-col justify-between"
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.05 }}
+              className="rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow hover:shadow-xl transition"
             >
-              <div>
-                {/* Icon stage */}
-                <div className="p-3 w-fit rounded-xl bg-white dark:bg-slate-900 shadow-xs group-hover:scale-110 transition-transform duration-300 mb-5">
-                  {service.icon}
-                </div>
-                
-                {/* Text Content */}
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-snug group-hover:text-blue-600 dark:group-hover:text-sky-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
-                  {service.desc}
-                </p>
+
+              {/* ✅ IMAGE TOP */}
+              <div className="h-48 w-full overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover hover:scale-110 transition duration-500"
+                />
               </div>
 
-              {/* Action Trigger */}
-              <button
-                id={`service-learn-more-${service.id}`}
-                onClick={() => handleLearnMore(service.title)}
-                className="w-fit text-xs font-bold text-blue-600 dark:text-sky-450 dark:text-sky-450 text-blue-600 dark:text-sky-400 group-hover:underline flex items-center gap-1 hover:translate-x-1 transition-transform cursor-pointer"
-              >
-                <span>{t('btn.learnMore')}</span>
-                <span>&rarr;</span>
-              </button>
+              <div className="p-5">
 
+                {/* ICON */}
+                <div className="mb-3">
+                  {service.icon}
+                </div>
+
+                {/* TITLE */}
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white">
+                  {service.title}
+                </h3>
+
+                {/* DESCRIPTION */}
+                <p
+                  className={`text-sm text-slate-500 mt-2 transition-all ${
+                    expanded.includes(service.id)
+                      ? ''
+                      : 'line-clamp-1'
+                  }`}
+                >
+                  {service.desc}
+                </p>
+
+                {/* BUTTON */}
+                <button
+                  onClick={() => toggle(service.id)}
+                  className="mt-3 text-sm font-semibold text-blue-600"
+                >
+                  {expanded.includes(service.id)
+                    ? 'Show Less'
+                    : 'Learn More'}
+                </button>
+
+              </div>
             </motion.div>
           ))}
-        </div>
 
+        </div>
       </div>
     </section>
   );
 };
+
 export default Services;

@@ -4,6 +4,7 @@ import { useTheme } from '../hooks/useTheme';
 import { motion } from 'motion/react';
 import { Plane, Compass, Globe, FileText, ChevronRight, Phone, ChevronLeft, PlaneTakeoff } from 'lucide-react';
 import { HelicopterIcon, WhatsAppIcon } from './Icons';
+import herobog from '../assets/images/herobg.png'
 
 export const Hero: React.FC = () => {
   const { t } = useLanguage();
@@ -100,13 +101,13 @@ export const Hero: React.FC = () => {
       {/* Background Image with elegant overlay */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <img
-          src="/src/assets/images/aviation_hero_bg_1780953603171.png"
+          src={herobog}
           alt="Aviation Background"
           referrerPolicy="no-referrer"
           className={`w-full h-full object-cover object-center transition-all duration-700 ${
             theme === 'dark' 
-              ? 'opacity-35' 
-              : 'opacity-[0.58] brightness-[0.98] contrast-[1.05] grayscale-[20%]'
+              ? 'opacity-95' 
+              : 'opacity-[0.58] brightness-[0.98] contrast-[2.05] grayscale-[5%]'
           }`}
         />
         {/* Dynamic theme-relative gradients for readable typography */}
@@ -170,13 +171,16 @@ export const Hero: React.FC = () => {
             >
               {t('hero.title')}
             </motion.h1>
-
+              
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-lg sm:text-xl font-bold text-blue-600 dark:text-sky-400"
             >
+              <span className=" font-extrabold text-blue-600 dark:text-white text-lg">
+                  {t('company.reg')}
+                </span> <br />
               {t('hero.sub')}
             </motion.p>
 

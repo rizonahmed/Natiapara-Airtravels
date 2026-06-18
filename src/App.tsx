@@ -36,7 +36,7 @@ export default function App() {
         <CoolMode />
 
         {/* Core Layout Shell */}
-        <div id="natiapara-app-container" className="min-h-screen bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300 font-sans">
+        <div id="natiapara-app-container" className="overflow-x-clip  min-h-screen bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300 font-sans">
           
           {/* Take-off aircraft loader */}
           <Loader />
@@ -49,15 +49,15 @@ export default function App() {
             <Hero />
             <About />
             <Services />
-            <Countries />
+            {/* <Countries /> */}
             <WhyChooseUs />
-            <Process />
-            <Statistics />
-            <Testimonials />
-            <MissionVision />
+            {/* <Process /> */}
+            {/* <Statistics /> */}
+            {/* <MissionVision /> */}
             <FAQ />
             <Gallery />
-            <TravelGuide />
+            {/* <Testimonials /> */}
+            {/* <TravelGuide /> */}
             <Contact />
           </main>
 
