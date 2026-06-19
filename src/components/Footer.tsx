@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3 pt-2">
               <a
                 id="footer-social-fb"
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1BF7RZn1gb/"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2.5 bg-slate-900 hover:bg-blue-600 hover:text-white rounded-xl transition-all"
@@ -59,6 +59,18 @@ export const Footer: React.FC = () => {
                 <Facebook className="w-4 h-4" />
               </a>
               <a
+                id="footer-social-fb"
+                href="https://www.facebook.com/share/19DqD85fjE/"
+                target="_blank"
+                rel="noreferrer"
+                className="p-2.5 bg-slate-900 hover:bg-blue-600 hover:text-white rounded-xl transition-all"
+                aria-label="Facebook Link Handle"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+
+
+              {/* <a
                 id="footer-social-wa"
                 href="https://wa.me/8801739284204"
                 target="_blank"
@@ -87,7 +99,9 @@ export const Footer: React.FC = () => {
                 aria-label="LinkedIn Corporate Profile"
               >
                 <Linkedin className="w-4 h-4" />
-              </a>
+              </a> */}
+
+
             </div>
           </div>
 
