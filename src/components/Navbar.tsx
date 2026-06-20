@@ -116,7 +116,7 @@ export const Navbar: React.FC = () => {
             className="flex items-center gap-2 group cursor-pointer max-w-[55%]"
           >
             <div className="p-1.5 sm:p-2 text-white group-hover:scale-110 transition-transform">
-              <img src={logo} alt="" className="h-16 rounded-2xl" />
+              <img src={logo} alt="Natiapara Air Travels Logo" className="h-16 rounded-2xl" />
             </div>
           </a>
 

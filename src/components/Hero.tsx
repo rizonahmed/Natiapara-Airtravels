@@ -307,9 +307,9 @@ export const Hero: React.FC = () => {
                           <span className="p-1 rounded-lg bg-blue-50 dark:bg-blue-950/40">
                             {item.icon}
                           </span>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-800 dark:text-white leading-snug line-clamp-1">
+                          <h3 className="font-extrabold text-sm sm:text-base text-slate-800 dark:text-white leading-snug line-clamp-1">
                             {item.title}
-                          </h4>
+                          </h3>
                         </div>
                         <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed line-clamp-3">
                           {item.desc}

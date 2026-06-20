@@ -379,9 +379,9 @@ export const Gallery: React.FC = () => {
                     <span className="text-[9px] tracking-widest font-extrabold uppercase text-sky-400 bg-sky-950/60 px-2 py-0.5 rounded-md border border-sky-800/50 w-max block">
                       {tabIdToLabel(item.category, language)}
                     </span>
-                    <h4 className="text-sm font-bold leading-tight font-display text-white">
+                    <h5 className="text-sm font-bold leading-tight font-display text-white">
                       {language === 'en' ? item.titleEn : item.titleBn}
-                    </h4>
+                    </h5>
                     <p className="text-[11px] text-slate-300 leading-normal line-clamp-2 font-sans">
                       {language === 'en' ? item.altEn : item.altBn}
                     </p>
