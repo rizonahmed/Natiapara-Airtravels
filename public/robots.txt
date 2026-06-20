@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.natiaparaairtravels.com/sitemap.xml
